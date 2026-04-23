@@ -16,7 +16,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.salahudin.bmiapp"
     },
     "android": {
       "adaptiveIcon": {
@@ -34,15 +35,19 @@
         "expo-build-properties",
         {
           "android": {
-            "ndkVersion": "27.0.12077973",
+            "androidGradlePluginVersion": "8.3.2",
             "compileSdkVersion": 35,
             "targetSdkVersion": 35,
             "buildToolsVersion": "35.0.0",
-            "packaging": {
+            "ndkVersion": "27.1.12297006",
+            "packagingOptions": {
               "jniLibs": {
                 "useLegacyPackaging": false
               }
             }
+          },
+          "ios": {
+            "useFrameworks": "static"
           }
         }
       ]
