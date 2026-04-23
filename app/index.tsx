@@ -52,10 +52,10 @@ const index = () => {
 
     if (weight && height) {
       let heightMeters = height / 100;
-      const bmiResult = (weight / (heightMeters * heightMeters)).toFixed(2);
+      const bmiResult = (weight / (heightMeters * heightMeters)).toFixed(1);
       router.push({
         pathname: "result",
-        params: { bmi: Number.parseInt(bmiResult) },
+        params: { bmi: bmiResult },
       });
     }
   };
